@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .box {
+      width: 100vw;
+      height: 100vh;
+      background-color: #1e1e1e;
+    }
+
+    .one {
+      width: 100%;
+      height: 100px;
+      background-color: green;
+    }
+
+    .two {
+      width: 100%;
+      height: 100px;
+      background-color: yellow;
+      position: relative;
+      top: -80px;
+    }
+
+    .four {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      height: 20px;
+      background-color: pink;
+    }
+
+    .three {
+      width: 100%;
+      height: 100px;
+      background-color: blue;
+    }
+
+    .five {
+      width: 100%;
+      height: 100px;
+      background-color: red;
+      position: fixed;
+      top: 110px;
+    }
+
+    .scrollbox {
+      width: 100vw;
+      height: 130px;
+      /* background-color: aliceblue; */
+      overflow-x: auto;
+    }
+
+    .table {
+      width: 5000px;
+      /* height: 100%; */
+      /* background-color: aqua; */
+      display: flex;
+    }
+
+    .td {
+      width: 70px;
+      /* height: 100%; */
+      background-color: red;
+      border: 1px solid blue;
+      margin-right: 2px;
+    }
+
+    .fixed {
+      position: sticky;
+      left: 70px;
+      width: 0;
+      height: 100%;
+    }
+
+    .zhanwei {
+      height: 50px;
+    }
+
+    .fiexed2 {
+      position: sticky;
+      left: 0;
+    }
+
+    .label_box {
+      width: 100px;
+      /* margin-top: 20px; */
+      color: red;
+      /* padding-top: 10px; */
+      font-size: 10px;
+      display: flex;
+      align-items: end;
+    }
+
+    .label_wrapper {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      width: 100px;
+      height: auto;
+    }
+
+    .label {
+      width: 15px;
+      height: 10px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="one"></div>
+    <div class="two">
+      <div class="four"></div>
+    </div>
+    <div class="three"></div>
+    <div class="five"></div>
+    <!-- 滚动盒子 -->
+    <!-- 滚动，别的都滚动，就第一列不滚动，标签不滚动 ,table就是演示的一个tr，tr的高度自动撑开的-->
+    <div class="scrollbox">
+      <div class="table">
+        <div class="fixed">
+          <div class="zhanwei"></div>
+          <div class="label_box">
+            <div class="label_wrapper">
+              <div class="label">1</div>
+              <div class="label">2</div>
+              <div class="label">3</div>
+              <div class="label">4</div>
+              <div class="label">5</div>
+              <div class="label">6</div>
+              <div class="label">1</div>
+              <div class="label">2</div>
+              <div class="label">3</div>
+              <div class="label">4</div>
+              <div class="label">5</div>
+              <div class="label">6</div>
+              <div class="label">1</div>
+              <div class="label">2</div>
+              <div class="label">3</div>
+              <div class="label">4</div>
+              <div class="label">5</div>
+              <div class="label">6</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="td fiexed2">box
+        </div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+        <div class="td"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
